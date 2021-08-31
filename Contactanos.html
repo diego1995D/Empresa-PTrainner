@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contactanos</title>
+    <style>
+        h1{
+            color: rgb(3, 0, 0); size: inherit; font-family: Verdana, Geneva, Tahoma, sans-serif; font-size: 35pt; marker: unset;
+        }
+        li{
+            color: rgb(8, 0, 0); font-family: fantasy; font-size: 30pt; 
+        }
+        h2
+        {color: #070000; font-family: Verdana, Geneva, Tahoma, sans-serif; font-size: 30pt; text-align: center;}
+        p{
+            font-size: 20pt; color: rgb(7, 0, 0); text-decoration-style: inherit; text-align: justify;
+        }
+        h1{
+            text-align: center;
+        }
+        div{
+            text-align: center;        
+        }
+        input{
+            text-align: center;
+        }
+        
+
+    </style>
+    <body background="IMG/gray-concrete-wall.jpg" style="background-size: cover;">
+        <h2>Contactanos</h2>
+<div id="after_submit"></div>
+    <form id="contact_form" action="#" method="POST" enctype="multipart/form-data">
+    <div class="row">
+    <label class="required" for="name">Tu nombre:</label><br />
+    <input id="name" class="input" name="name" type="text" value="" size="50" /><br />
+    <span id="name_validation" class="error_message"></span>
+    </div>
+    <div class="row">
+    <label class="required" for="email">Tu Email:</label><br />
+    <input id="email" class="input" name="email" type="text" value="" size="50" /><br />
+    <span id="email_validation" class="error_message"></span>
+    </div>
+    <div class="row">
+    <label class="required" for="message">Tu mensaje:</label><br />
+    <textarea id="message" class="input" name="message" rows="7" cols="50"></textarea><br />
+    <span id="message_validation" class="error_message"></span>
+     </div>
+    
+     <center><input id="submit_button" type="submit" value="enviar mensaje" /></form></center>
+    </body>
+    </html>
